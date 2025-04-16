@@ -1,5 +1,7 @@
 
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:practice_project/GetxPart/Calculator.dart';
 import 'package:practice_project/GetxPart/HomScreen.dart';
 import 'package:practice_project/NoteApp/BackupPart/LoginPage.dart';
 import 'package:practice_project/NoteApp/BackupPart/Registration.dart';
@@ -16,10 +18,9 @@ class MyApp extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData.dark(),
-      home:HomeScreen(),
+      home:Calculator(),
     );
   }
   
