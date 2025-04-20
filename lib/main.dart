@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget{
 
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home:Serviceshow(),
+      home:LoginPage(),
     );
   }
 

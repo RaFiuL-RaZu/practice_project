@@ -15,6 +15,8 @@ class _LoginPageState extends State<LoginPage> {
   TextEditingController mailController=TextEditingController();
   TextEditingController passController=TextEditingController();
   final mykey=GlobalKey<FormState>();
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -114,13 +116,8 @@ class _LoginPageState extends State<LoginPage> {
                     Center(
                       child: InkWell(
                         onTap: (){
-                         if(mailController.text == "rafi102621@gmail.com" || passController.text =="rafi102621"){
-                           Navigator.push(context, MaterialPageRoute(builder: (context)=>Succcesspage()));
-                           ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Login successfully")));
-                         }
-                         else{
-                           ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Invalid mail or password")));
-                         }
+
+
                         },
                         child: SizedBox(
                           child: Container(
