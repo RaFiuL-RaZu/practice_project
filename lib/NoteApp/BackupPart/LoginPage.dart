@@ -1,6 +1,7 @@
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
+import 'package:practice_project/API%20Part/LoginApi.dart';
 import 'package:practice_project/NoteApp/BackupPart/Registration.dart';
 import 'package:practice_project/NoteApp/BackupPart/SucccessPage.dart';
 
@@ -115,10 +116,10 @@ class _LoginPageState extends State<LoginPage> {
                     SizedBox(height: 30),
                     Center(
                       child: InkWell(
-                        onTap: (){
+                        onTap: ()async{
+                         await LoginApi.Service();
 
-
-                        },
+                          },
                         child: SizedBox(
                           child: Container(
                               decoration: BoxDecoration(
